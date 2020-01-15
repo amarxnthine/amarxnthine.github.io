@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Amaranthine's Playground</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import "stylesheet.css";
+</style>
+</head>
+<body>
+
+<script type=text/javascript>
+function single(stuff)
+{ 
+var stuffx = Math.floor(Math.random() * stuff.length) 
+document.write(stuff[stuffx])
+}
+
+function curve(stuff)
+{ 
+var stuffz = Math.floor(Math.random() * stuff.length) 
+var stuffx = Math.floor(Math.random() * stuff.length) 
+var stuffn = Math.floor((stuffz+stuffx)/2)
+document.write(stuff[stuffn])
+}
+
+function multiple(stuff,b,a) 
+{ 
+i = 0 
+var n = Math.floor(Math.random() * (b-a+1))+a
+do 
+{
+i++
+var stuffx = Math.floor(Math.random() * stuff.length) 
+document.write(stuff[stuffx])
+stuff.splice(stuffx,1)
+if (i < n-1)
+{
+document.write(", ")
+}
+else if (i < n)
+{
+document.write(" and ")
+}
+}
+while (i < n)
+}
+</script>
+
+<div class="sidenav">
+  <a href="/index.html">Index</a>
+  <a href="/generators.html">Generators</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="content">
+
+  <div class="title">Generators</div>
+  <br><br>
+
+ <button type="button" class="collapsible">Character Generator</button>
+<div class="collapsablecontent">
+  <p><script type="text/javascript"> 
+ 
+document.write("<b>Gender:</b> ") 
+var gender = new Array 
+gender[0] = 'male' 
+gender[1] = 'female' 
+single(gender)
+
+ 
+document.write("<br /><b>Age:</b> ") 
+var age = new Array 
+age[0] = '14-17' 
+age[1] = '18-22' 
+age[2] = '22-25' 
+age[3] = '26-30' 
+age[4] = '31-40' 
+age[5] = '41-50' 
+age[6] = '51+' 
+single(age)
+
+ 
+document.write("<br /><b>Profession:</b> ") 
+var profession = new Array 
+profession[0] = 'student' 
+profession[1] = 'cashier' 
+profession[2] = 'pizza delivery' 
+profession[3] = 'waiter or waitress' 
+profession[4] = 'cook' 
+profession[5] = 'veterinarian' 
+profession[6] = 'doctor' 
+profession[7] = 'nurse' 
+profession[8] = 'soldier' 
+profession[9] = 'teacher' 
+profession[10] = 'professer' 
+profession[11] = 'security guard' 
+profession[12] = 'unemployed' 
+profession[15] = 'homemaker'
+profession[16] = 'farmer'
+profession[17] = 'burglar'
+profession[18] = 'criminal'
+single(profession) 
+
+ 
+document.write("<br /><b>Best Stat:</b> ") 
+var best_stat = new Array 
+best_stat[0] = 'strength' 
+best_stat[1] = 'dexterity' 
+best_stat[2] = 'perception' 
+best_stat[3] = 'constitution' 
+best_stat[4] = 'intelligence' 
+best_stat[5] = 'willpower' 
+single(best_stat) 
+
+ 
+document.write("<br /><b>Worst Stat:</b> ") 
+var worst_stat = new Array 
+worst_stat[0] = 'strength' 
+worst_stat[1] = 'dexterity' 
+worst_stat[2] = 'perception' 
+worst_stat[3] = 'constitution' 
+worst_stat[4] = 'intelligence' 
+worst_stat[5] = 'willpower' 
+single(worst_stat) 
+
+document.write("<br /><b>Qualities:</b> ") 
+var qualities = new Array 
+qualities[0] = 'strength' 
+qualities[1] = 'dexterity' 
+qualities[2] = 'perception' 
+qualities[3] = 'constitution' 
+qualities[4] = 'intelligence' 
+qualities[5] = 'willpower' 
+multiple(qualities,0,3)
+
+document.write("<br /><b>Drawbacks:</b> ") 
+var drawbacks = new Array 
+drawbacks[0] = 'strength' 
+drawbacks[1] = 'dexterity' 
+drawbacks[2] = 'perception' 
+drawbacks[3] = 'constitution' 
+drawbacks[4] = 'intelligence' 
+drawbacks[5] = 'willpower' 
+multiple(drawbacks,0,3) 
+
+ 
+document.write("<br /><b>Skills:</b> ") 
+var skills = new Array 
+skills[0] = '1' 
+skills[1] = '2' 
+skills[2] = '3' 
+skills[3] = '4' 
+skills[4] = '5' 
+skills[5] = '6' 
+skills[6] = '7' 
+skills[7] = '8' 
+skills[8] = '9' 
+skills[9] = '10' 
+skills[10] = '11' 
+skills[11] = '12' 
+skills[12] = '13' 
+skills[13] = '14' 
+skills[14] = '15' 
+skills[15] = '16' 
+skills[16] = '17' 
+skills[17] = '18' 
+skills[18] = '19' 
+skills[19] = '20' 
+multiple(skills,1,5) 
+
+document.write("<br /><b>Carries stuff:</b> ") 
+var carries = new Array 
+carries[0] = 'on their person' 
+carries[1] = 'in a backpack' 
+carries[2] = 'in their pockets'  
+multiple(carries,1,3) 
+
+document.write("<br /><br /><b>Person:</b> ") 
+var person = new Array 
+person[0] = 'full handgun' 
+person[1] = 'empty handgun' 
+person[2] = 'knife' 
+person[3] = 'loaded rifle' 
+person[4] = 'empty rifle' 
+person[5] = 'bulletproof vest' 
+person[6] = 'leather jacket' 
+person[7] = 'flashlight' 
+person[8] = 'hat'
+person[9] = 'wedding ring'
+person[10] = 'necklace'
+multiple(person,1,3) 
+
+ 
+document.write("<br /><b>Pockets:</b> ") 
+var pockets = new Array 
+pockets[0] = 'lighter' 
+pockets[1] = 'cigarettes' 
+pockets[2] = 'loose ammo rounds' 
+pockets[3] = 'small photo'
+pockets[4] = 'loose change'
+pockets[5] = 'utility knife'
+multiple(pockets,1,2) 
+
+ 
+document.write("<br /><b>Backpack:</b> ") 
+var backpack = new Array 
+backpack[0] = 'water bottle' 
+backpack[1] = 'box of ammo' 
+backpack[2] = 'trail mix' 
+backpack[3] = 'can of beans' 
+backpack[4] = 'hunting knife' 
+backpack[5] = 'can opener' 
+backpack[6] = 'first aid kit' 
+backpack[7] = 'bandages' 
+backpack[8] = 'handgun' 
+backpack[9] = 'revolver' 
+backpack[10] = 'map' 
+backpack[11] = 'sleeping bag' 
+backpack[12] = 'rope' 
+backpack[13] = 'flashlight' 
+backpack[14] = 'box of crackers'
+backpack[15] = 'purification tablets'
+backpack[16] = 'needle and thread'
+backpack[17] = 'novel'
+backpack[18] = 'survival guide'
+multiple(backpack,2,5) 
+</script></p>
+</div> 
+
+<br> <br>
+
+ <button type="button" class="collapsible">Residential Looting</button>
+<div class="collapsablecontent">
+  <p><script type="text/javascript"> 
+ 
+document.write("<b>Loot Quantity:</b> ") 
+var loot_quantity = new Array 
+loot_quantity[0] = 'Untouched' 
+loot_quantity[1] = 'Semi-Looted' 
+loot_quantity[2] = 'Semi-Looted' 
+loot_quantity[3] = 'Semi-Looted' 
+loot_quantity[4] = 'Heavily Looted' 
+loot_quantity[5] = 'Heavily Looted' 
+loot_quantity[6] = 'Heavily Looted'
+loot_quantity[7] = 'Stripped Bare' 
+single(loot_quantity)  
+
+document.write("<br /><b>Living Room:</b> ") 
+var living_room = new Array 
+living_room[0] = 'TV remote' 
+living_room[1] = 'batteries' 
+living_room[2] = 'plush blanket' 
+living_room[3] = 'pillows' 
+living_room[4] = 'novel' 
+living_room[5] = 'DVD player' 
+living_room[6] = 'DVDs' 
+living_room[7] = 'CDs' 
+living_room[8] = 'cigarettes' 
+living_room[9] = 'lighter' 
+living_room[10] = 'flashlight' 
+living_room[11] = 'candles' 
+living_room[12] = 'laptop' 
+living_room[13] = 'candies' 
+living_room[14] = 'chocolates' 
+living_room[15] = 'playing cards'
+living_room[16] = 'board games'
+living_room[17] = 'shoes'
+living_room[18] = 'light jacket'
+living_room[19] = 'winter coat'
+living_room[20] = 'rubber boots'
+living_room[21] = 'winter boots'
+multiple(living_room,1,10) 
+
+ 
+document.write("<br /><b>Kitchen:</b> ") 
+var kitchen = new Array 
+kitchen[0] = 'knife block' 
+kitchen[1] = 'can opener' 
+kitchen[2] = 'cutlery' 
+kitchen[3] = 'plates' 
+kitchen[4] = 'cups' 
+kitchen[5] = 'zipper bags'
+kitchen[6] = 'wax paper' 
+kitchen[7] = 'cling wrap' 
+kitchen[8] = 'twist ties' 
+kitchen[9] = 'pot' 
+kitchen[10] = 'frying pan' 
+kitchen[11] = 'dish cloth' 
+kitchen[12] = 'drying towel' 
+kitchen[13] = 'paking pan' 
+kitchen[14] = 'kettle' 
+kitchen[15] = 'saucepan' 
+kitchen[16] = 'oven mitts' 
+kitchen[17] = 'coffee' 
+kitchen[18] = 'cereal' 
+kitchen[19] = 'rice'
+kitchen[20] = 'noodles'
+kitchen[21] = 'dish soap' 
+kitchen[22] = 'fire extinguisher'
+multiple(kitchen,1,10) 
+
+ 
+document.write("<br /><b>Bedroom:</b> ") 
+var bedroom = new Array 
+bedroom[0] = 'cigarettes' 
+bedroom[1] = 'lighter' 
+bedroom[2] = 'weed' 
+bedroom[3] = 'money' 
+bedroom[4] = 'change' 
+bedroom[5] = 'novel' 
+bedroom[6] = 'underwear' 
+bedroom[7] = 'shirt' 
+bedroom[8] = 'pants' 
+bedroom[9] = 'socks' 
+bedroom[10] = 'hat' 
+bedroom[11] = 'shoes' 
+bedroom[12] = 'notebook' 
+bedroom[13] = 'used journal' 
+bedroom[14] = 'pepper spray' 
+bedroom[15] = 'cellphone' 
+bedroom[16] = 'picture'
+bedroom[17] = 'duvet'
+bedroom[18] = 'scratchy blanket'
+bedroom[19] = 'sewing kit'
+bedroom[20] = 'sweater'
+bedroom[21] = 'dress'
+bedroom[22] = 'shorts'
+bedroom[23] = 'teddy bear'
+multiple(bedroom,1,10) 
+
+document.write("<br /><b>Bathroom:</b> ") 
+var bathroom = new Array 
+bathroom[0] = 'pack of toilet paper' 
+bathroom[1] = 'roll of toilet paper' 
+bathroom[2] = 'kleenex' 
+bathroom[3] = 'toothbrush' 
+bathroom[4] = 'toothpaste' 
+bathroom[5] = 'mouthwash' 
+bathroom[6] = 'nail clippers' 
+bathroom[7] = 'floss' 
+bathroom[8] = 'shampoo' 
+bathroom[9] = 'conditioner' 
+bathroom[10] = 'body wash' 
+bathroom[11] = 'soap' 
+bathroom[12] = 'pack of razors' 
+bathroom[13] = 'deodorant' 
+bathroom[14] = 'face wash' 
+bathroom[15] = 'towel' 
+bathroom[16] = 'first aid kit' 
+bathroom[17] = 'box of bandages' 
+bathroom[18] = 'alcohol' 
+bathroom[19] = 'peroxide'
+bathroom[20] = 'shaving cream'
+bathroom[21] = 'pepto bismol'
+bathroom[22] = 'polysporin'
+bathroom[23] = 'tylenol'
+bathroom[24] = 'antidepressants'
+bathroom[25] = 'beta blockers'
+bathroom[26] = 'tylenol 3'
+bathroom[27] = 'tramadol'
+bathroom[27] = 'antacids'
+multiple(bathroom,1,10) 
+
+document.write("<br /><b>Storage:</b> ") 
+var storage = new Array 
+storage[0] = 'box of nails' 
+storage[1] = 'toolbox' 
+storage[2] = 'cat litter' 
+storage[3] = 'first aid kit' 
+storage[4] = 'dog food' 
+storage[5] = 'cat food' 
+storage[6] = 'folding chair' 
+storage[7] = 'board game' 
+storage[8] = 'hammer' 
+storage[9] = 'saw' 
+storage[10] = 'screwdriver' 
+storage[11] = 'box of screws' 
+storage[12] = 'zip ties' 
+storage[13] = 'photo albums' 
+storage[14] = 'pack of toilet paper' 
+storage[15] = 'paper towels' 
+storage[16] = 'kleenex' 
+storage[17] = 'flashlight' 
+storage[18] = 'matches' 
+storage[19] = 'lighter'
+storage[20] = 'batteries'
+storage[21] = 'bb gun'
+storage[22] = 'can of bbs' 
+multiple(storage,5,9) 
+
+var special_room_1 = Math.floor(Math.random() * 6) 
+switch(special_room_1) 
+{ 
+case 0: 
+document.write("<br /><b>Attic:</b> ") 
+var attic = new Array 
+attic[0] = 'christmas lights' 
+attic[1] = 'suitcase' 
+attic[2] = 'cardboard boxes' 
+attic[3] = 'tent kit' 
+attic[4] = 'gold clubs' 
+attic[5] = 'toys' 
+attic[6] = 'electrical cables' 
+attic[7] = 'planks' 
+attic[8] = 'clothes' 
+attic[9] = 'photo albums' 
+multiple(attic,1,4) 
+break 
+ 
+case 1: 
+document.write("<br /><b>Basement:</b> ") 
+var basement = new Array 
+basement[0] = 'board games' 
+basement[1] = 'dvds' 
+basement[2] = 'cds' 
+basement[3] = 'tv remote' 
+basement[4] = 'laundry soap' 
+multiple(basement,1,3) 
+break 
+ 
+case 2: 
+document.write("<br /><b>Garage:</b> ") 
+var garage = new Array 
+garage[0] = 'bicycle' 
+garage[1] = 'tire pump' 
+garage[2] = 'toolbox' 
+garage[3] = 'climbing gear' 
+garage[4] = 'rope' 
+garage[5] = 'tent' 
+garage[6] = 'sleeping bags' 
+garage[7] = 'fire extinguisher' 
+garage[8] = 'chainsaw' 
+garage[9] = 'axe' 
+garage[10] = 'motorcycle'
+garage[11] = 'sedan'
+garage[12] = 'pick up truck'
+garage[13] = 'van'
+multiple(garage,2,6) 
+break 
+
+case 3: 
+document.write("<br /><b>Extra Bedroom:</b> ") 
+var extra_bedroom = new Array 
+extra_bedroom[0] = 'cigarettes' 
+extra_bedroom[1] = 'lighter' 
+extra_bedroom[2] = 'weed' 
+extra_bedroom[3] = 'money' 
+extra_bedroom[4] = 'change' 
+extra_bedroom[5] = 'novel' 
+extra_bedroom[6] = 'underwear' 
+extra_bedroom[7] = 'shirt' 
+extra_bedroom[8] = 'pants' 
+extra_bedroom[9] = 'socks' 
+extra_bedroom[10] = 'hat' 
+extra_bedroom[11] = 'shoes' 
+extra_bedroom[12] = 'notebook' 
+extra_bedroom[13] = 'used journal' 
+extra_bedroom[14] = 'pepper spray' 
+extra_bedroom[15] = 'cellphone' 
+extra_bedroom[16] = 'picture'
+extra_bedroom[17] = 'duvet'
+extra_bedroom[18] = 'scratchy blanket'
+extra_bedroom[19] = 'sewing kit'
+extra_bedroom[20] = 'sweater'
+extra_bedroom[21] = 'dress'
+extra_bedroom[22] = 'shorts'
+extra_bedroom[23] = 'teddy bear'
+multiple(extra_bedroom,1,5) 
+break 
+
+case 4: 
+document.write("<br /><b>Extra Bathroom:</b> ") 
+var extra_bathroom = new Array 
+extra_bathroom[0] = 'pack of toilet paper' 
+extra_bathroom[1] = 'roll of toilet paper' 
+extra_bathroom[2] = 'kleenex' 
+extra_bathroom[3] = 'toothbrush' 
+extra_bathroom[4] = 'toothpaste' 
+extra_bathroom[5] = 'mouthwash' 
+extra_bathroom[6] = 'nail clippers' 
+extra_bathroom[7] = 'floss' 
+extra_bathroom[8] = 'shampoo' 
+extra_bathroom[9] = 'conditioner' 
+extra_bathroom[10] = 'body wash' 
+extra_bathroom[11] = 'soap' 
+extra_bathroom[12] = 'pack of razors' 
+extra_bathroom[13] = 'deodorant' 
+extra_bathroom[14] = 'face wash' 
+extra_bathroom[15] = 'towel' 
+extra_bathroom[16] = 'first aid kit' 
+extra_bathroom[17] = 'box of bandages' 
+extra_bathroom[18] = 'alcohol' 
+extra_bathroom[19] = 'peroxide'
+extra_bathroom[20] = 'shaving cream'
+extra_bathroom[21] = 'pepto bismol'
+extra_bathroom[22] = 'polysporin'
+extra_bathroom[23] = 'tylenol'
+extra_bathroom[24] = 'antidepressants'
+extra_bathroom[25] = 'beta blockers'
+extra_bathroom[26] = 'tylenol 3'
+extra_bathroom[27] = 'tramadol'
+extra_bathroom[27] = 'antacids'
+multiple(extra_bathroom,1,5) 
+break 
+
+case 5: 
+document.write("<br /><b>Gun Locker:</b> ") 
+var gun_locker = new Array 
+gun_locker[0] = 'handgun' 
+gun_locker[1] = 'rifle' 
+gun_locker[2] = 'shotgun' 
+gun_locker[3] = 'revolver' 
+gun_locker[4] = 'longbow' 
+gun_locker[5] = 'shortbow' 
+gun_locker[6] = 'crossbow' 
+gun_locker[7] = '9mm ammo' 
+gun_locker[8] = '.22 caliber ammo' 
+gun_locker[9] = '.32 caliber ammo'
+gun_locker[10] = '.38 caliber ammo' 
+gun_locker[11] = '10mm ammo'
+gun_locker[12] = '.45 caliber ammo'
+gun_locker[13] = '357 magnum ammo'
+gun_locker[14] = '.44 magnum ammo'
+gun_locker[15] = '.22 LR ammo'
+gun_locker[16] = '5.56 ammo'
+gun_locker[17] = '.30-06 ammo'
+gun_locker[18] = '7.62 mm ammo'
+gun_locker[19] = 'birdshot ammo'
+gun_locker[20] = 'buckshot ammo'
+gun_locker[21] = 'slug ammo'
+multiple(gun_locker,2,6) 
+break 
+} 
+
+var special_room_2 = Math.floor(Math.random() * 4) 
+switch(special_room_2) 
+{ 
+case 0: 
+document.write("<br /><b>Attic:</b> ") 
+var attic2 = new Array 
+attic2[0] = 'christmas lights' 
+attic2[1] = 'suitcase' 
+attic2[2] = 'cardboard boxes' 
+attic2[3] = 'tent kit' 
+attic2[4] = 'golf clubs' 
+attic2[5] = 'toys' 
+attic2[6] = 'electrical cables' 
+attic2[7] = 'planks' 
+attic2[8] = 'clothes' 
+attic2[9] = 'photo albums' 
+multiple(attic2,1,4) 
+break 
+ 
+case 1: 
+document.write("<br /><b>Basement:</b> ") 
+var basement2 = new Array 
+basement2[0] = 'board games' 
+basement2[1] = 'dvds' 
+basement2[2] = 'cds' 
+basement2[3] = 'tv remote' 
+basement2[4] = 'laundry soap' 
+multiple(basement2,1,3) 
+break 
+ 
+case 2: 
+document.write("<br /><b>Garage:</b> ") 
+var garage2 = new Array 
+garage2[0] = 'bicycle' 
+garage2[1] = 'tire pump' 
+garage2[2] = 'toolbox' 
+garage2[3] = 'climbing gear' 
+garage2[4] = 'rope' 
+garage2[5] = 'tent' 
+garage2[6] = 'sleeping bags' 
+garage2[7] = 'fire extinguisher' 
+garage2[8] = 'chainsaw' 
+garage2[9] = 'axe' 
+garage2[10] = 'motorcycle'
+garage2[11] = 'sedan'
+garage2[12] = 'pick up truck'
+garage2[13] = 'van'
+multiple(garage2,2,6) 
+break 
+
+case 3: 
+document.write("<br /><b>Extra Bedroom:</b> ") 
+var extra_bedroom2 = new Array 
+extra_bedroom2[0] = 'cigarettes' 
+extra_bedroom2[1] = 'lighter' 
+extra_bedroom2[2] = 'weed' 
+extra_bedroom2[3] = 'money' 
+extra_bedroom2[4] = 'change' 
+extra_bedroom2[5] = 'novel' 
+extra_bedroom2[6] = 'underwear' 
+extra_bedroom2[7] = 'shirt' 
+extra_bedroom2[8] = 'pants' 
+extra_bedroom2[9] = 'socks' 
+extra_bedroom2[10] = 'hat' 
+extra_bedroom2[11] = 'shoes' 
+extra_bedroom2[12] = 'notebook' 
+extra_bedroom2[13] = 'used journal' 
+extra_bedroom2[14] = 'pepper spray' 
+extra_bedroom2[15] = 'cellphone' 
+extra_bedroom2[16] = 'picture'
+extra_bedroom2[17] = 'duvet'
+extra_bedroom2[18] = 'scratchy blanket'
+extra_bedroom2[19] = 'sewing kit'
+extra_bedroom2[20] = 'sweater'
+extra_bedroom2[21] = 'dress'
+extra_bedroom2[22] = 'shorts'
+extra_bedroom2[23] = 'teddy bear'
+multiple(extra_bedroom2,1,5) 
+break 
+} 
+
+var features = Math.floor(Math.random() * 5) 
+switch(features) 
+{
+case 0: 
+document.write("<br /><br /><b>Druggie:</b> ") 
+var druggie = new Array 
+druggie[0] = 'stash of weed' 
+druggie[1] = 'lighters' 
+druggie[2] = 'bong' 
+druggie[3] = 'weed pipe' 
+druggie[4] = 'crack pipe' 
+druggie[5] = 'gram of heroin' 
+druggie[6] = 'gram of cocaine' 
+druggie[7] = 'rolling papers' 
+druggie[8] = 'joints' 
+druggie[9] = 'stash of cocaine'
+druggie[10] = 'oxycodone'
+druggie[11] = 'adderal'
+druggie[12] = 'stash of heroin'
+druggie[13] = 'box of unused needles'
+multiple(druggie,1,4) 
+break 
+ 
+case 1: 
+document.write("<br /><br /><b>Farmhouse:</b> ") 
+var farmhouse = new Array 
+farmhouse[0] = 'barn with horses' 
+farmhouse[1] = 'empty barn' 
+farmhouse[2] = 'barn with cows' 
+farmhouse[3] = 'tractor' 
+farmhouse[4] = 'shovel' 
+farmhouse[5] = 'hose' 
+farmhouse[6] = 'seeds' 
+farmhouse[7] = 'water well' 
+farmhouse[8] = 'fertilizer' 
+farmhouse[9] = 'agricultural antibiotics'
+farmhouse[10] = 'pesticide'
+farmhouse[11] = 'corn field'
+farmhouse[12] = 'pasture of horses' 
+multiple(farmhouse,4,8) 
+break 
+
+case 2: 
+document.write("<br /><br /><b>Prepper:</b> ") 
+var prepper = new Array 
+prepper[0] = 'box of mres' 
+prepper[1] = 'stash of batteries' 
+prepper[2] = 'box of canned goods' 
+prepper[3] = 'pack of bottled water' 
+prepper[4] = 'rifle and box of ammo' 
+prepper[5] = 'pistol and box of ammo' 
+prepper[6] = 'pickled vegetables' 
+prepper[7] = 'dried fruit' 
+prepper[8] = 'dried meat' 
+prepper[9] = 'prepper manual' 
+multiple(prepper,4,10) 
+break 
+
+case 3: 
+document.write("<br /><br /><b>Family:</b> ") 
+var family = new Array 
+family[0] = 'unused formula' 
+family[1] = 'bottles' 
+family[2] = 'baby clothes' 
+family[3] = 'toys' 
+family[4] = 'children\'s books' 
+family[5] = 'swingset' 
+family[6] = 'crib' 
+family[7] = 'box of diapers' 
+family[8] = 'box of wipes' 
+family[9] = 'cloth diapers' 
+family[10] = 'pacifiers'
+family[11] = 'jarred baby food'
+multiple(family,3,6) 
+break 
+
+case 4: 
+document.write("<br /><br /><b>Military:</b> ") 
+var military = new Array 
+military[0] = 'rifle with ammo' 
+military[1] = 'box of mres' 
+military[2] = 'military walkie talkie' 
+military[3] = 'army fatigues' 
+military[4] = 'military backpack' 
+military[5] = 'military flashlight' 
+military[6] = 'supressor' 
+military[7] = 'box of trail mix' 
+multiple(military,1,4) 
+break  
+} 
+</script>
+</p>
+</div> 
+
+<br> <br>
+
+ <button type="button" class="collapsible">Commercial Looting</button>
+<div class="collapsablecontent">
+  <p><script type="text/javascript"> 
+document.write("<b>Grocery Store:</b> ") 
+var grocery_store = new Array 
+grocery_store[0] = 'peanut butter' 
+grocery_store[1] = 'crackers' 
+grocery_store[2] = 'milk' 
+grocery_store[3] = 'vegetables' 
+grocery_store[4] = 'trail mix' 
+grocery_store[5] = 'canned beans' 
+grocery_store[6] = 'canned corn' 
+grocery_store[7] = 'canned peas' 
+grocery_store[8] = 'energy drinks' 
+grocery_store[9] = 'protien powder' 
+grocery_store[10] = 'coffee' 
+grocery_store[11] = 'tea' 
+grocery_store[12] = 'powdered sweetener' 
+grocery_store[13] = 'sugar' 
+grocery_store[14] = 'honey' 
+grocery_store[15] = 'chips' 
+grocery_store[16] = 'pretzels' 
+grocery_store[17] = 'salt' 
+grocery_store[18] = 'vinigar' 
+grocery_store[19] = 'candy'  
+multiple(grocery_store,6,10) 
+
+ 
+document.write("<br /><b>Convenience Store:</b> ") 
+var convenience_store = new Array 
+convenience_store[0] = 'bag of chips' 
+convenience_store[1] = 'bottle of pop' 
+convenience_store[2] = 'lighters' 
+convenience_store[3] = 'tampons' 
+convenience_store[4] = 'pads' 
+convenience_store[5] = 'condoms' 
+convenience_store[6] = 'cigarettes' 
+convenience_store[7] = 'kraft dinner' 
+convenience_store[8] = 'noodles' 
+convenience_store[9] = 'bag of peanuts' 
+convenience_store[10] = 'bag of seeds' 
+convenience_store[11] = 'canned tomatoes' 
+convenience_store[12] = '2l of pop' 
+convenience_store[13] = 'dried pasta' 
+convenience_store[14] = 'candies' 
+convenience_store[15] = 'chocolate bar' 
+convenience_store[16] = 'box of bandaids' 
+convenience_store[17] = 'hydrogen peroxide' 
+convenience_store[18] = 'tylenol' 
+convenience_store[19] = 'bendaryl' 
+multiple(convenience_store,4,6) 
+
+ 
+document.write("<br /><b>Hardware Store:</b> ") 
+var hardware_store = new Array 
+hardware_store[0] = 'hammer' 
+hardware_store[1] = 'box of nails' 
+hardware_store[2] = 'saw' 
+hardware_store[3] = 'screwdriver' 
+hardware_store[4] = 'box of screws' 
+hardware_store[5] = 'padlock' 
+hardware_store[6] = 'rope' 
+hardware_store[7] = 'twine' 
+hardware_store[8] = 'duct tape' 
+hardware_store[9] = 'superglue' 
+hardware_store[10] = 'batteries' 
+hardware_store[11] = '2pc walkie talkies' 
+hardware_store[12] = 'crowbar' 
+hardware_store[13] = 'flashlight' 
+hardware_store[14] = 'electrical wire' 
+hardware_store[15] = 'empty gas can' 
+hardware_store[16] = 'fishing rod' 
+hardware_store[17] = 'tackle box' 
+hardware_store[18] = 'wood glue' 
+hardware_store[19] = 'metal piping'  
+multiple(hardware_store,3,6) 
+
+ 
+document.write("<br /><b>Drugstore:</b> ") 
+var drugstore = new Array 
+drugstore[0] = 'condoms' 
+drugstore[1] = 'shampoo' 
+drugstore[2] = 'conditioner' 
+drugstore[3] = 'hair brush' 
+drugstore[4] = 'makeup' 
+drugstore[5] = 'cotton swaps' 
+drugstore[6] = 'cotton balls' 
+drugstore[7] = 'tampons' 
+drugstore[8] = 'pads' 
+drugstore[9] = 'diva cup' 
+drugstore[10] = 'first aid kit' 
+drugstore[11] = 'knee brace' 
+drugstore[12] = 'tylenol' 
+drugstore[13] = 'advil' 
+drugstore[14] = 'pepto bismol' 
+drugstore[15] = 'box of bandaids' 
+drugstore[16] = 'roll of bandage material' 
+drugstore[17] = 'alcohol' 
+drugstore[18] = 'peroxide' 
+drugstore[19] = 'water treatment tabs'  
+multiple(drugstore,3,6) 
+
+ 
+document.write("<br /><b>Vet Clinic:</b> ") 
+var vet_clinic = new Array 
+vet_clinic[0] = 'dog food' 
+vet_clinic[1] = 'cat food' 
+vet_clinic[2] = 'box of syringes' 
+vet_clinic[3] = 'box of needles' 
+vet_clinic[4] = 'insulin needles' 
+vet_clinic[5] = 'tramadol' 
+vet_clinic[6] = 'lidocaine' 
+vet_clinic[7] = 'propofol' 
+vet_clinic[8] = 'ketamine' 
+vet_clinic[9] = 'diazapam' 
+vet_clinic[10] = 'amoxicillin' 
+vet_clinic[11] = 'box of latex gloves' 
+vet_clinic[12] = 'gauze squares' 
+vet_clinic[13] = 'stretch wrap' 
+vet_clinic[14] = 'laundry soap' 
+vet_clinic[15] = 'surgical kit' 
+vet_clinic[16] = 'scalpel blades' 
+vet_clinic[17] = 'suture material' 
+vet_clinic[18] = 'forceps' 
+vet_clinic[19] = 'hemostats' 
+multiple(vet_clinic,5,7) 
+
+ 
+document.write("<br /><b>Hospital:</b> ") 
+var hospital = new Array 
+hospital[0] = 'latex gloves' 
+hospital[1] = 'nitrile gloves' 
+hospital[2] = 'doctors kit' 
+hospital[3] = 'surgical kit' 
+hospital[4] = 'first aid kit' 
+hospital[5] = 'crutches' 
+hospital[6] = 'iv poles' 
+hospital[7] = 'fluid bags' 
+hospital[8] = 'iv catheters' 
+hospital[9] = 'drip sets' 
+hospital[10] = 'box of syringes' 
+hospital[11] = 'box of needles' 
+hospital[12] = 'propofol' 
+hospital[13] = 'intubation kit' 
+hospital[14] = 'morphine' 
+hospital[15] = 'fentanyl' 
+hospital[16] = 'bandage rolls' 
+hospital[17] = 'medical tape' 
+hospital[18] = 'oxygen tanks' 
+hospital[19] = 'nasal cannula' 
+multiple(hospital,8,10) 
+
+ 
+document.write("<br /><b>Police Station:</b> ") 
+var police_station = new Array 
+police_station[0] = 'police car' 
+police_station[1] = 'bulletproof vest' 
+police_station[2] = 'riot gear' 
+police_station[3] = 'handgun' 
+police_station[4] = 'revolver' 
+police_station[5] = 'rifle' 
+police_station[6] = 'shotgun' 
+police_station[7] = '9mm ammo' 
+police_station[8] = '.22 lr ammo' 
+police_station[9] = 'buckshot ammo' 
+police_station[10] = '.38 caliber ammo' 
+police_station[11] = 'duffel bag' 
+police_station[12] = 'police uniform' 
+police_station[13] = 'leather boots' 
+police_station[14] = 'belt holster' 
+police_station[15] = 'two-way radio' 
+police_station[16] = 'two-way walkie talkie' 
+multiple(police_station,4,6) 
+
+ 
+document.write("<br /><b>Fire Station:</b> ") 
+var fire_station = new Array 
+fire_station[0] = 'hose' 
+fire_station[1] = 'firesuit' 
+fire_station[2] = 'firetruck' 
+fire_station[3] = 'axe' 
+fire_station[4] = 'jaws of life'  
+multiple(fire_station,2,4) 
+
+ 
+document.write("<br /><b>Gas Station:</b> ") 
+var gas_station = new Array 
+gas_station[0] = 'gas' 
+gas_station[1] = 'empty gas can' 
+gas_station[2] = 'magazine' 
+gas_station[3] = 'chips' 
+gas_station[4] = 'pop' 
+gas_station[5] = 'bottled water' 
+gas_station[6] = 'lighter' 
+gas_station[7] = 'cigarettes' 
+multiple(gas_station,1,3) 
+</script></p>
+</div> 
+
+<br> <br>
+
+ <button type="button" class="collapsible">Four</button>
+<div class="collapsablecontent">
+  <p>Lorem ipsum...</p>
+</div> 
+
+<br> <br>
+
+ <button type="button" class="collapsible">Five</button>
+<div class="collapsablecontent">
+  <p>Lorem ipsum...</p>
+</div> 
+
+<br> <br>
+
+ <button type="button" class="collapsible">Six</button>
+<div class="collapsablecontent">
+  <p>Lorem ipsum...</p>
+</div> 
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</div>
+</body>
+</html>
