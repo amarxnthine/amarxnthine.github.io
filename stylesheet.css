@@ -12,7 +12,7 @@ body {
 /* Style the side navigation */
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 150px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -37,7 +37,7 @@ body {
 
 /* Style the content */
 .content {
-  margin-left: 200px;
+  margin-left: 150px;
   padding-left: 20px;
   font: 12px arial;
 }
@@ -58,7 +58,6 @@ body {
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 500px;
   border: none;
   text-align: left;
   outline: none;
@@ -73,7 +72,6 @@ body {
 /* Style the collapsible content. Note: hidden by default */
 .collapsablecontent {
   padding: 5px;
-  width: 488px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
