@@ -17,7 +17,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #222;
+  background-color: #014421;
   overflow-x: hidden;
 }
 
@@ -31,7 +31,7 @@ body {
 
 /* Change color on hover */
 .sidenav a:hover {
-  background-color: #ddd;
+  background-color: #01572a;
   color: black;
 }
 
