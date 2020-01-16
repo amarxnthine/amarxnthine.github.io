@@ -51,7 +51,7 @@ while (i < n)
 <div class="sidenav">
   <a href="/index.html">Index</a>
   <a href="/generators.html">Generators</a>
-  <a href="#">Link</a>
+  <a href="/zombies.html">Zombies</a>
 </div>
 
 <div class="content">
@@ -127,48 +127,19 @@ single(worst_stat)
 
 document.write("<br /><b>Qualities:</b> ") 
 var qualities = new Array 
-qualities[0] = 'strength' 
-qualities[1] = 'dexterity' 
-qualities[2] = 'perception' 
-qualities[3] = 'constitution' 
-qualities[4] = 'intelligence' 
-qualities[5] = 'willpower' 
+qualities[0] = 'Attractive (+)' 
+qualities[1] = 'Charisma (+)' 
+qualities[2] = 'Resources (-)'
 multiple(qualities,0,3)
 
 document.write("<br /><b>Drawbacks:</b> ") 
 var drawbacks = new Array 
-drawbacks[0] = 'strength' 
-drawbacks[1] = 'dexterity' 
-drawbacks[2] = 'perception' 
-drawbacks[3] = 'constitution' 
-drawbacks[4] = 'intelligence' 
-drawbacks[5] = 'willpower' 
+drawbacks[0] = 'Attractive (-)'
+drawbacks[1] = 'Charisma (-)' 
+drawbacks[2] = 'Resources (-)'
+drawbacks[3] = 'Addiction' 
+drawbacks[4] = 'Emotional Problems'
 multiple(drawbacks,0,3) 
-
- 
-document.write("<br /><b>Skills:</b> ") 
-var skills = new Array 
-skills[0] = '1' 
-skills[1] = '2' 
-skills[2] = '3' 
-skills[3] = '4' 
-skills[4] = '5' 
-skills[5] = '6' 
-skills[6] = '7' 
-skills[7] = '8' 
-skills[8] = '9' 
-skills[9] = '10' 
-skills[10] = '11' 
-skills[11] = '12' 
-skills[12] = '13' 
-skills[13] = '14' 
-skills[14] = '15' 
-skills[15] = '16' 
-skills[16] = '17' 
-skills[17] = '18' 
-skills[18] = '19' 
-skills[19] = '20' 
-multiple(skills,1,5) 
 
 document.write("<br /><b>Carries stuff:</b> ") 
 var carries = new Array 
@@ -234,18 +205,6 @@ multiple(backpack,2,5)
  <button type="button" class="collapsible">Residential Looting</button>
 <div class="collapsablecontent">
   <p><script type="text/javascript"> 
- 
-document.write("<b>Loot Quantity:</b> ") 
-var loot_quantity = new Array 
-loot_quantity[0] = 'Untouched' 
-loot_quantity[1] = 'Semi-Looted' 
-loot_quantity[2] = 'Semi-Looted' 
-loot_quantity[3] = 'Semi-Looted' 
-loot_quantity[4] = 'Heavily Looted' 
-loot_quantity[5] = 'Heavily Looted' 
-loot_quantity[6] = 'Heavily Looted'
-loot_quantity[7] = 'Stripped Bare' 
-single(loot_quantity)  
 
 document.write("<br /><b>Living Room:</b> ") 
 var living_room = new Array 
