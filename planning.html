@@ -5,15 +5,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-@import "stylesheet.css";
+@import "https://amarxnthine.github.io/stylesheet.css";
 </style>
 </head>
 <body>
 
 <div class="sidenav">
-  <a href="/index.html">Index</a>
-  <a href="/generators.html">Generators</a>
-  <a href="/zombies.html">Zombies</a>
+  <a href="https://amarxnthine.github.io/index.html">Index</a>
+  <a href="https://amarxnthine.github.io/generators.html">Generators</a>
+  <a href="https://amarxnthine.github.io/zombies.html">Zombies</a>
 </div>
 
 <div class="content">
@@ -21,21 +21,37 @@
   <div style="text-align:right"><a href="/mechanics.html">Mechanics</a> - <a href="/characters.html">Characters</a> - <a href="/planning.html">Planning</a> - <a href="/story.html">Story</a>
 </div>
 
-<p><b>Outbreak:</b>
-<ul>
-	<li>Downed cargo plane/abandoned semi truck</li>
-	<li>Hospital</li>
-	<li>Police station</li>
-	<li>Shopping mall</li>
-	<li>Pharmacy </li>
-	<li>Quarry/Mine</li>
-	<li>Prison</li>
-	<li>Military base </li>
-	<li>Pub/bar</li>
+ <button type="button" class="collapsible">Links</button>
+<div class="collapsablecontent">
+<p><ul>
+        <li><a href="https://forum.rpg.net/index.php?threads/101-post-apocalyptic-adventure-seeds.524769/">101 Adventure Seeds</a></li> 
+	<li>Here</li>
+	<li>Here</li>
+	<li>Here</li>
+	<li>Here</li>
+	<li>Here</li>
 </ul></p>
+</div> 
 
-<p><b>Things to Do:</b>
+<br><br>
+
+ <button type="button" class="collapsible">Outbreak/Starting Point</button>
+<div class="collapsablecontent">
 <ul>
+        <li><a href="https://forum.rpg.net/index.php?threads/101-post-apocalyptic-adventure-seeds.524769/">101 Adventure Seeds</a></li> 
+	<li>Here</li>
+	<li>Here</li>
+	<li>Here</li>
+	<li>Here</li>
+	<li>Here</li>
+</ul></p>
+</div> 
+
+<br><br>
+
+ <button type="button" class="collapsible">Things to Do</button>
+<div class="collapsablecontent">
+<p><ul>
 	<li>A large but precariously balanced object balanced at the top of a parking garage ramp near a large group of zombies. Setting it rolling will kill a whole load of them at once. Practically it'll also make a lot of noise but damn it'll be satisfying.</li>
 	<li>Some badass who thought he was too cool for teamwork and went out loaded with guns. Ended up being too weighed down to run away and now he's a zombie. Still has his combat bandoleer full of the guns and ammo he fetishised during life though./li>
 	<li>Drive through an underpass or tunnel only run right into 100's of zombies on the other side.</li>
@@ -55,8 +71,12 @@ Then the survivors may need to be helped to evacuate the building, get down to g
 	<li>Here</li>
 	<li>Here</li>
 </ul></p>
+</div> 
 
-<p><b>People to Meet:</b>
+<br><br>
+
+ <button type="button" class="collapsible">People to Meet</button>
+<div class="collapsablecontent">
 <ul>
 	<li>TWD: </li>
 	<li>FTWD: </li>
@@ -69,17 +89,19 @@ Then the survivors may need to be helped to evacuate the building, get down to g
 	<li>Prison</li>
 	<li>Military base </li>
 	<li>Pub/bar</li>
-	<li>TWD: </li>
-	<li>FTWD: </li>
 	<li>Here</li>
 	<li>Here</li>
 	<li>Here</li>
 	<li>Here</li>
 </ul></p>
+</div> 
 
-<p><b>Places to Explore:</b>
+<br><br>
+
+ <button type="button" class="collapsible">Places to Go</button>
+<div class="collapsablecontent">
 <ul>
-	<li>TWD: sururb, police station, quarry/lake, CDC, farm, prison, gated community, small town, train station, church, survivor compound, factory </li>
+	<li>TWD: sururb, police station, quarry/lake, CDC, farm, bar, food bank, prison, secured town, gated community, small town, train station, church, survivor compound, factory </li>
 	<li>FTWD: high school, military quarantine, yacht, secluded island, harbor, villa, winery, desert, hotel, barricaded town, grocery store, border stop, fuel depot, ranch, hydro dam, post-fall bazaar, baseball stadium</li>
 	<li>TLoU: </li>
 	<li>Z Nation: </li>
@@ -95,16 +117,24 @@ Then the survivors may need to be helped to evacuate the building, get down to g
 	<li>Here</li>
 	<li>Here</li>
 </ul></p>
+</div> 
 
-<p><b>Links:</b>
-<ul>
-        <li><a href="https://forum.rpg.net/index.php?threads/101-post-apocalyptic-adventure-seeds.524769/">101 Adventure Seeds</a></li> 
-	<li>Here</li>
-	<li>Here</li>
-	<li>Here</li>
-	<li>Here</li>
-	<li>Here</li>
-</ul></p>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 </div>
 </body>

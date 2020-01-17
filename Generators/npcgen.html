@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Amaranthine's Playground</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import "https://amarxnthine.github.io/stylesheet.css";
+</style>
+</head>
+<body>
+
+<script type=text/javascript>
+function single(stuff)
+{ 
+var stuffx = Math.floor(Math.random() * stuff.length) 
+document.write(stuff[stuffx])
+}
+
+function curve(stuff)
+{ 
+var stuffz = Math.floor(Math.random() * stuff.length) 
+var stuffx = Math.floor(Math.random() * stuff.length) 
+var stuffn = Math.floor((stuffz+stuffx)/2)
+document.write(stuff[stuffn])
+}
+
+function multiple(stuff,b,a) 
+{ 
+i = 0 
+var n = Math.floor(Math.random() * (b-a+1))+a
+do 
+{
+i++
+var stuffx = Math.floor(Math.random() * stuff.length) 
+document.write(stuff[stuffx])
+stuff.splice(stuffx,1)
+if (i < n-1)
+{
+document.write(", ")
+}
+else if (i < n)
+{
+document.write(" and ")
+}
+}
+while (i < n)
+}
+</script>
+
+<div class="sidenav">
+  <a href="https://amarxnthine.github.io/index.html">Index</a>
+  <a href="https://amarxnthine.github.io/generators.html">Generators</a>
+  <a href="https://amarxnthine.github.io/zombies.html">Zombies</a>
+</div>
+
+<div class="content">
+
+  <div class="title">NPC Generator</div>
+  <br><br>
+
+  <p><script type="text/javascript"> 
+ 
+document.write("<b>Gender:</b> ") 
+var gender = new Array 
+gender[0] = 'male' 
+gender[1] = 'female' 
+single(gender)
+
+ 
+document.write("<br /><b>Age:</b> ") 
+var age = new Array 
+age[0] = '14-17' 
+age[1] = '18-22' 
+age[2] = '22-25' 
+age[3] = '26-30' 
+age[4] = '31-40' 
+age[5] = '41-50' 
+age[6] = '51+' 
+single(age)
+
+document.write("<br /><b>Archetype:</b> ") 
+var arch = new Array 
+arch[0] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[1] = 'Detective  - 2/2/3/2/3/2 <br /><b>Qualities & Drawbacks:</b> Addiction (Smoking), Addiction (Alcohol), Contacts (Police), Hard to Kill, Nerves of Steel<br /><b>Skills:</b> Brawling 2, Bureaucracy 1, Computers 1, Driving (Car) 1, First Aid 1, Handguns 2, Shotguns 1, Humanities (Criminal Law) 2, Intimidation 2, Notice 2, Questioning 3, Investigation 3, Stealth 2, Streetwise 2, Surveillance 3 <br /> <b>Possessions:</b> Handgun, Chainsaw' 
+arch[2] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[3] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[4] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[5] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[6] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[7] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[8] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[9] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[10] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[11] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[12] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[13] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[14] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[15] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[16] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[17] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[18] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+arch[19] = 'Name - x/x/x/x/x/x <br><b>Qualities & Drawbacks:</b> Here <br><b>Skills:</b> Here <br><b>Possessions:</b> Here' 
+single(arch)
+
+document.write("<br /><b>Unique Trait:</b> ") 
+var unique = new Array 
+unique[0] = 'has a small stash of medical supplies' 
+unique[1] = 'alcoholic' 
+unique[2] = 'armed and trained to use it' 
+unique[3] = 'has a dog' 
+unique[4] = 'looking for a family member' 
+unique[5] = 'came across a hidden cache and will share if helped' 
+unique[6] = 'primarily  speaks another language'
+unique[7] = 'part of a small group' 
+unique[8] = 'sole survivor of a group' 
+unique[9] = 'looking for someone they were split from'
+unique[10] = 'in need of medical care, has nothing to offer' 
+unique[11] = 'in need of medical care, has something to offer' 
+unique[12] = 'is starving and could use some food' 
+unique[13] = 'has a starving child with them' 
+unique[14] = 'is surrounded by zombies' 
+unique[15] = 'incredibly anxious/freaking out' 
+unique[16] = 'has something they want to trade'
+unique[17] = 'scout for another group' 
+unique[18] = 'secured a safehouse' 
+unique[19] = 'passed out cold with no idea zombie(s) are now near'
+single(unique)
+
+</script></p>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</div>
+</body>
+</html>

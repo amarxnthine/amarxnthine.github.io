@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-@import "stylesheet.css";
+@import "https://amarxnthine.github.io/stylesheet.css";
 </style>
 </head>
 <body>
@@ -49,9 +49,9 @@ while (i < n)
 </script>
 
 <div class="sidenav">
-  <a href="/index.html">Index</a>
-  <a href="/generators.html">Generators</a>
-  <a href="/zombies.html">Zombies</a>
+  <a href="https://amarxnthine.github.io/index.html">Index</a>
+  <a href="https://amarxnthine.github.io/generators.html">Generators</a>
+  <a href="https://amarxnthine.github.io/zombies.html">Zombies</a>
 </div>
 
 <div class="content">
@@ -59,147 +59,21 @@ while (i < n)
   <div class="title">Generators</div>
   <br><br>
 
+<p><b>Character Generators:</b>
+<ul>
+	<li><a href="https://amarxnthine.github.io/generators/chargen.html">Full Character Generator</a></li>
+	<li><a href="https://amarxnthine.github.io/generators/npcgen.html">NPC Generator</a></li>
+</ul>
+
+<b>Loot Generators:</b>
+<ul>
+	<li>Full Chracter Generator</li>
+	<li> NPC Generator</li>
+</ul>
+
+</p>
+
 <p><b>Generator Ideas:</b> move everything to it's own page, or at least a page sorted by type. Redo residential home generator. Make better loot tables - medical, junk, food, et cetera.</p>
- <button type="button" class="collapsible">Character Generator</button>
-<div class="collapsablecontent">
-  <p><script type="text/javascript"> 
- 
-document.write("<b>Gender:</b> ") 
-var gender = new Array 
-gender[0] = 'male' 
-gender[1] = 'female' 
-single(gender)
-
- 
-document.write("<br /><b>Age:</b> ") 
-var age = new Array 
-age[0] = '14-17' 
-age[1] = '18-22' 
-age[2] = '22-25' 
-age[3] = '26-30' 
-age[4] = '31-40' 
-age[5] = '41-50' 
-age[6] = '51+' 
-single(age)
-
- 
-document.write("<br /><b>Profession:</b> ") 
-var profession = new Array 
-profession[0] = 'student' 
-profession[1] = 'cashier' 
-profession[2] = 'pizza delivery' 
-profession[3] = 'waiter or waitress' 
-profession[4] = 'cook' 
-profession[5] = 'veterinarian' 
-profession[6] = 'doctor' 
-profession[7] = 'nurse' 
-profession[8] = 'soldier' 
-profession[9] = 'teacher' 
-profession[10] = 'professer' 
-profession[11] = 'security guard' 
-profession[12] = 'unemployed' 
-profession[15] = 'homemaker'
-profession[16] = 'farmer'
-profession[17] = 'burglar'
-profession[18] = 'criminal'
-single(profession) 
-
- 
-document.write("<br /><b>Best Stat:</b> ") 
-var best_stat = new Array 
-best_stat[0] = 'strength' 
-best_stat[1] = 'dexterity' 
-best_stat[2] = 'perception' 
-best_stat[3] = 'constitution' 
-best_stat[4] = 'intelligence' 
-best_stat[5] = 'willpower' 
-single(best_stat) 
-
- 
-document.write("<br /><b>Worst Stat:</b> ") 
-var worst_stat = new Array 
-worst_stat[0] = 'strength' 
-worst_stat[1] = 'dexterity' 
-worst_stat[2] = 'perception' 
-worst_stat[3] = 'constitution' 
-worst_stat[4] = 'intelligence' 
-worst_stat[5] = 'willpower' 
-single(worst_stat) 
-
-document.write("<br /><b>Qualities:</b> ") 
-var qualities = new Array 
-qualities[0] = 'Attractive (+)' 
-qualities[1] = 'Charisma (+)' 
-qualities[2] = 'Artistic Talent'
-qualities[3] = 'Contacts' 
-qualities[4] = 'Fast Reaction Time' 
-qualities[5] = 'Hard to Kill'
-qualities[6] = 'Multiple Identities' 
-qualities[7] = 'Nerves of Steel' 
-qualities[8] = 'Photographic Memory'
-qualities[9] = 'Resistance (Disease)'
-qualities[10] = 'Resistance (Poison)' 
-qualities[11] = 'Resistance (Fatigue)' 
-qualities[12] = 'Resources (+)'
-qualities[13] = 'Situational Awareness' 
-qualities[14] = 'Status (+)' 
-qualities[15] = 'Good Luck'
-multiple(qualities,0,3)
-
-document.write("<br /><b>Drawbacks:</b> ") 
-var drawbacks = new Array 
-drawbacks[0] = 'Addiction'
-drawbacks[1] = 'Adversary' 
-drawbacks[2] = 'Attractiveness (-)'
-drawbacks[3] = 'Charisma (-)' 
-drawbacks[4] = 'Clown'
-drawbacks[5] = 'Covetous'
-drawbacks[6] = 'Cowardly' 
-drawbacks[7] = 'Cruel'
-drawbacks[8] = 'Delusions' 
-drawbacks[9] = 'Emotional Problems'
-drawbacks[10] = 'Honorable'
-drawbacks[11] = 'Lazy' 
-drawbacks[12] = 'Minority'
-drawbacks[13] = 'Humorless' 
-drawbacks[14] = 'Obsessions'
-drawbacks[15] = 'Paranoid'
-drawbacks[16] = 'Physical Disability' 
-drawbacks[17] = 'Recurring Nightmares'
-drawbacks[18] = 'Resources (-)'
-drawbacks[19] = 'Secret'
-drawbacks[20] = 'Showoff'
-drawbacks[21] = 'Status (-)' 
-drawbacks[22] = 'Talentless'
-drawbacks[23] = 'Zealot' 
-drawbacks[23] = 'Bad Luck' 
-multiple(drawbacks,0,3) 
-
-document.write("<br /><br /><b>Possessions:</b> ") 
-var possessions = new Array 
-possessions[0] = 'pocket knife' 
-possessions[1] = 'handgun' 
-possessions[2] = 'rifle' 
-possessions[3] = 'small backpack' 
-possessions[4] = 'big backpack' 
-possessions[5] = 'bulletproof vest' 
-possessions[6] = 'leather jacket' 
-possessions[7] = 'flashlight' 
-possessions[8] = 'small car'
-possessions[9] = 'work boots'
-possessions[10] = 'first aid kit' 
-possessions[11] = 'wallet' 
-possessions[12] = 'cell phone' 
-possessions[13] = 'jeep' 
-possessions[14] = 'laptop' 
-possessions[15] = 'gaming system' 
-multiple(possessions,1,5) 
-
-</script></p>
-</div> 
-
-<br> <br>
-
  <button type="button" class="collapsible">Residential Looting</button>
 <div class="collapsablecontent">
   <p><script type="text/javascript"> 
