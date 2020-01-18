@@ -50,6 +50,13 @@ body {
   font-size: 36px;
 
 }
+/* story heading title  */
+.heading {
+  text-align: right;
+  border-bottom: 1px solid black;
+  font-size: 24px;
+
+}
 
  /* Collapsible Button */
 .collapsible {
