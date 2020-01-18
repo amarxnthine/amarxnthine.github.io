@@ -40,7 +40,6 @@ body {
   margin-left: 150px;
   padding-left: 20px;
   padding-right: 20px;
-  font: 12px arial;
 }
 
 /* Title Styling  */
@@ -48,7 +47,7 @@ body {
   text-align: right;
   border-bottom: 1px solid black;
   margin-left: 10px;
- font: 36px Arial;
+ font: 36px;
 
 }
 
