@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Amaranthine's Playground</title>
+<title>What Do You Fear?</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -17,11 +17,85 @@
 </div>
 
 <div class="content">
-  <div class="title">Zombies</div>
-  <div style="text-align:right"><a href="/mechanics.html">Mechanics</a> - <a href="/characters.html">Characters</a> - <a href="/planning.html">Planning</a> - <a href="/story.html">Story</a>
+  <div class="title">Zombies: Characters</div>
+  <div style="text-align:right"><a href="/mechanics.html">Mechanics</a> - <a href="/characters.html">Characters</a> - <a href="/planning.html">Planning</a> - <a href="/story.html">Story</a></div>
+<h2>Full Name</h2>
+<div>
+<p>A basic description of who this character is goes here. Occupation, basic personality, et cetera. No more than a few sentences.</p>
+<p><strong>Age</strong>:<br /> <strong>Gender</strong>:<br /> <strong>Occupation</strong>:<br /> <strong>Faction</strong>:</p>
+<p><strong>Possessions:</strong> the items your character has goes here.</p>
+<p><strong>Background</strong>: A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera.</p>
+</div>
+<h3><a href="/docs/attributes.html">Attributes</a></h3>
+<div>
+<p><strong>Strength</strong>:<br /> <strong>Dexterity</strong>:<br /> <strong>Constitution</strong>:<br /> <strong>Intelligence</strong>:<br /> <strong>Perception</strong>:<br /> <strong>Willpower</strong>:</p>
+<p><strong>Life Points</strong>:<br /> <strong>Endurance Points:</strong><br /> <strong>Speed</strong>:<br /> <strong>Essence Pool</strong>:</p>
+</div>
+<h3><a href="/docs/qualdraw.html">Qualities + Drawbacks</a></h3>
+<div>
+<p><strong>Qualities</strong>: go here</p>
+<p><strong>Drawbacks</strong>: go here</p>
+</div>
+<h3><a href="/docs/skills.html">Skills</a></h3>
+<div>
+<p>Any skill your character has should be listed here. If it's not listed here, it is assumed the character does not have that skill.</p>
+</div>
+<h3>Changelog</h3>
+<div>
+<p><strong>dd/mm/yy</strong>: skill added, quality added, drawback removed, item gained, et cetera</p>
+
 </div>
 
-<p>A zombie apocalypse story using All Flesh Must Be Eaten Mechanics to guide it.
+ <button type="button" class="collapsible">Profile Template Code</button>
+<div class="collapsablecontent">
+
+<xmp><h2>Full Name</h2>
+<div>
+<p>A basic description of who this character is goes here. Occupation, basic personality, et cetera. No more than a few sentences.</p>
+<p><strong>Age</strong>:<br /> <strong>Gender</strong>:<br /> <strong>Occupation</strong>:<br /> <strong>Faction</strong>:</p>
+<p><strong>Possessions:</strong> the items your character has goes here.</p>
+<p><strong>Background</strong>: A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera. A more in depth description of the character's background, family, personality, et cetera.</p>
+</div>
+<h3>Attributes</h3>
+<div>
+<p><strong>Strength</strong>:<br /> <strong>Dexterity</strong>:<br /> <strong>Constitution</strong>:<br /> <strong>Intelligence</strong>:<br /> <strong>Perception</strong>:<br /> <strong>Willpower</strong>:</p>
+<p><strong>Life Points</strong>:<br /> <strong>Endurance Points:</strong><br /> <strong>Speed</strong>:<br /> <strong>Essence Pool</strong>:</p>
+</div>
+<h3>Qualities + Drawbacks</h3>
+<div>
+<p><strong>Qualities</strong>: go here</p>
+<p><strong>Drawbacks</strong>: go here</p>
+</div>
+<h3>Skills</h3>
+<div>
+<p>Any skill your character has should be listed here. If it's not listed here, it is assumed the character does not have that skill.</p>
+</div>
+<h3>Changelog</h3>
+<div>
+<p><strong>dd/mm/yy</strong>: skill added, quality added, drawback removed, item gained, et cetera</p>
+</div></xmp>
+
+</div>
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 </div>
 </body>
 </html>
