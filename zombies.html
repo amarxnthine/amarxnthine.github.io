@@ -18,12 +18,38 @@
 
 <div class="content">
   <div class="title">Zombies</div>
-  <div style="text-align:right"><a href="/mechanics.html">Mechanics</a> - <a href="/characters.html">Characters</a> - <a href="/planning.html">Planning</a> - <a href="/story.html">Story</a></div>
+  <div style="text-align:right"><a href="/mechanics.html">Mechanics</a> - <a href="/characters.html">Characters</a> - <a href="/planning.html">Planning</a></div>
   
   <center><img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/1808C/production/_91344489_thinkstockphotos-576713768.jpg"></center>
 <p> A zombie apocalypse story written using All Flesh Must Be Eaten mechanics and random generators as a guide so that I can write it solo and still have an element of surprise within it.<br><br>
 
  It all started six months a go when a little-too-easy-going CDC employee caught the flu in the middle of the winter - no one thought anything of it, but because of that no one realized that it wasn't just a normal flu that he was coughing up.</p>
+ 
+ <button type="button" class="collapsible">Chapter One</button>
+<div class="collapsablecontent">
+<div class="heading">June 12th, 2020</div>
+<div class="subheading"><b>Location:</b> here<br>
+<b>Characters Involved:</b> here</div>
+<p>Storyline will end up going here.</p>
+</div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 </div>
 </body>
