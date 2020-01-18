@@ -76,9 +76,7 @@ while (i < n)
 	<li><a href="/docs/encountergen.html">Encounter Generator</a> - Things to see, people to meet, places to go</li>
 </ul></p>
 
- <button type="button" class="collapsible">External Generators</button>
-<div class="collapsablecontent">
-<ul> 
+<p><ul> 
 	<li><a href="http://wizardawn.and-mag.com/tool_scavenge.php">WizarDawn Scavenge Tool</a></li>
 	<li><a href="https://chartopia.d12dev.com/chart/1148/">Chartopia Grand Unified Loot Table</a></li>
 	<li><a href="https://chartopia.d12dev.com/chart/2115/">Chartopia Post-Apocalyptic Junk Loot</a></li>
@@ -93,23 +91,6 @@ while (i < n)
 	<li><a href="">Here</a></li>
 </ul></p>
 </div> 
- 
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
 
 </div>
 </body>
