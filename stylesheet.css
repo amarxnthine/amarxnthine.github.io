@@ -39,6 +39,7 @@ body {
 .content {
   margin-left: 150px;
   padding-left: 20px;
+  padding-right: 20px;
   font: 12px arial;
 }
 
@@ -47,15 +48,14 @@ body {
   text-align: right;
   border-bottom: 1px solid black;
   margin-left: 10px;
-  margin-right: 10px;
  font: 36px Arial;
 
 }
 
  /* Collapsible Button */
 .collapsible {
-  background-color: #ccc;
-  color: #444;
+  background-color: #014421;
+  color: #fff;
   cursor: pointer;
   padding: 18px;
   border: none;
@@ -66,7 +66,7 @@ body {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ddd;
+  background-color: #014421;
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -74,7 +74,7 @@ body {
   padding: 5px;
   display: none;
   overflow: hidden;
-  background-color: #ddd;
-  border: 1px solid #ccc;
+  background-color: #bda27e;
+  border: 1px solid #000;
 } 
 </style>
