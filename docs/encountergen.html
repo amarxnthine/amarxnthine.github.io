@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Amaranthine's Playground</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import "https://amarxnthine.github.io/stylesheet.css";
+</style>
+</head>
+<body>
+
+<script type=text/javascript>
+function single(stuff)
+{ 
+var stuffx = Math.floor(Math.random() * stuff.length) 
+document.write(stuff[stuffx])
+}
+
+function curve(stuff)
+{ 
+var stuffz = Math.floor(Math.random() * stuff.length) 
+var stuffx = Math.floor(Math.random() * stuff.length) 
+var stuffn = Math.floor((stuffz+stuffx)/2)
+document.write(stuff[stuffn])
+}
+
+function multiple(stuff,b,a) 
+{ 
+i = 0 
+var n = Math.floor(Math.random() * (b-a+1))+a
+do 
+{
+i++
+var stuffx = Math.floor(Math.random() * stuff.length) 
+document.write(stuff[stuffx])
+stuff.splice(stuffx,1)
+if (i < n-1)
+{
+document.write(", ")
+}
+else if (i < n)
+{
+document.write(" and ")
+}
+}
+while (i < n)
+}
+</script>
+
+<div class="sidenav">
+  <a href="https://amarxnthine.github.io/index.html">Index</a>
+  <a href="https://amarxnthine.github.io/generators.html">Generators</a>
+  <a href="https://amarxnthine.github.io/zombies.html">Zombies</a>
+</div>
+
+<div class="content">
+
+  <div class="title">Encounters Generator</div>
+  <br><br>
+
+<p><script type="text/javascript"> 
+ 
+document.write("<b>Things to Do:</b> ") 
+var things = new Array 
+things[0] = 'Searching for lost family members/friends, or randomly reuniting with said people. Searching for shelter, a water source, a food supply, et cetera to try to keep going. The basics of getting the shit together at the start of the apocalypse.' 
+things[1] = 'A large but precariously balanced object balanced at the top of a parking garage ramp near a large group of zombies. Setting it rolling will kill a whole load of them at once. Practically it\'ll also make a lot of noise but damn it\'ll be satisfying.' 
+things[2] = 'Some badass who thought he was too cool for teamwork and went out loaded with guns. Ended up being too weighed down to run away and now he\'s a zombie. Still has his combat bandoleer full of the guns and ammo he fetishised during life though' 
+things[3] = 'Drive through an underpass or tunnel only run right into 100s of zombies on the other side.' 
+things[4] = 'Someone is trapping zombies in the area. He/she/they are luring mobs into sealed areas with loud music, played on portable stereos with remote controls. These zombies are locked in gymnasiums, natatoriums, and other buildings with large spaces but small exits, with the doors securely sealed and blocked off. The captors may have been considerate enough to put signs up, reading "DON\'T OPEN. DEAD INSIDE.", but who\'s going to let that be. If they\'re still in the area, they\'re not going to be happy if you undo all their hard work.' 
+things[5] = 'The PCs learn that one of the more effective survivor communities has holed up in some abandoned subway stations (off the usual lines), but to find them they will have to search through a large area of pitch black tunnels and maitenence areas. ' 
+things[6] = 'The PCs find a stash of goods behind a security door, and while they don\'t have the key or combination they are able to determine who had it, and thus much search through/hunt down the zombies in a given area systematically, and without using tactics (like explosives, flame throwers, etc...) that could cause what they need to be lost or destroyed. Potentially forcing a lot of PCs toting heavy weapons to use other methods.' 
+things[7] = 'A Zombie carriage. Someone took out teeth and hands off to a certain number of zombie, and chained them to a car with no more fuel. The owner of the vehicle may be on the car, use it to drag goods, or dead.' 
+things[8] = 'A small building under siege. There\'s another building nearby, with a ladder lying on the roof. If someone were to lay the ladder across the space between the roofs, the occupants of the besieged building could crawl across. It will be necessary to get into the other building without attracting the attention of any large group of zombies. Then make it to the roof, despite any hazards caused by the breakdown of the building, or possibly insane or rapacious survivors, and make use of the ladder. Then the survivors may need to be helped to evacuate the building, get down to ground level and sneak away.' 
+things[9] = 'Three zombies wandering around an area. These are identical triplets who happened to all be wearing the same outfit when they died. Newcomers will normally see only one at a time, but it will seem as if that one leaves in one direction, then reappears from another within seconds, giving the illusion of a teleporting zombie.' 
+things[10] = 'They find what appears to be a postal service or courier type vehicle, crashed at the side of the road. Within, they find a zombie dressed in a postal worker\'s or delivery service outfit, and several packages for shipping. Where it gets odd, is the zombie is REALLY well armed and wearing body armor. If they examine the packages, they find that the packages are all filled with quantities of illegal drugs or cash. A curveball for parties who loot everything (which is many, if not all, amirite?) and wonder what to make of this find.' 
+things[11] = 'Massive car-pile-up at an intersection from when the EMP went off. If the zombie contagion is airborne then possibly there\'s a couple of undead trapped in the cars.' 
+things[12] = 'The group stumbles across the aftermath of a zombie attack on a police riot squad. The police had lost the fight (obviously) and their riot van was overturned and surrounded by a number of zombies, the van is loaded with riot gear and possibly other weapons so the group needs to make a choice. Is the chance to grab some armor and weapons from the van worth the risk?' 
+things[13] = 'An alley seems normal at a casual glance but if more carefully examined a viewer can detect traces of blood in the pavement. A gang lies in wait on the the adjacent rooftops- ready to throw bricks at anyone who enters the narrow alley below. The gang has been doing well robbing the bodies of scavengers and may even post signs offering shelter with which to lure folks into the alley.' 
+things[14] = 'A plagueship. A vacation cruise ship that has been drifting, filled with zombies (and possibly a few survivors) and a lot of supplies. The ship is headed for shallow waters, and if it runs aground, a whole horde will end up shambling ashore. That being said, the supplies are drawing survivors like buzzards to roadkill, willing to risk the ship\'s residents to salvage food and supplies. Very few of them are willing to share, and it\'s only a matter of time before the ship runs aground and sinks, destroying the majority of what\'s aboard.' 
+things[15] = 'female' 
+things[16] = 'male' 
+things[17] = 'female' 
+things[18] = 'male' 
+things[19] = 'female' 
+single(things)
+
+ 
+document.write("<br /><br /><b>People to See:</b> ") 
+var people = new Array 
+people[0] = 'Another survivor group in the middle of looting a store. They\'re armed and unwilling to share, but your group is between them and an easy escape. Could become a horrible gunfight, could become a siege.' 
+people[1] = 'A bitten person, desperate not to be killed for it.' 
+people[2] = 'Living person disguised as a zombie. Could be trying to avoid their notice. Could be delusional.' 
+people[3] = 'A paranoid sniper in a clock tower above a barricaded store. He won\'t let you near “his” supplies–which he considers to be anything he can see through his scope. You can turn back or get shot, as far as he\'s concerned. But there\'s a big horde behind you, so if you go back, you\'re probably zombie chow.' 
+people[4] = 'A shopkeeper who doggedly keeps her convenience store open out of a sense of duty to her rapidly dwindling community. Buys and sells goods. (Member of an NPC group?)' 
+people[5] = '41-50' 
+people[6] = '51+' 
+people[7] = '31-40' 
+people[8] = '41-50' 
+people[9] = '51+' 
+single(people)
+
+document.write("<br /><br /><b>Town/City Locations:</b> ") 
+var urban = new Array 
+urban[0] = 'hospital' 
+urban[1] = 'police station' 
+urban[2] = 'military base' 
+urban[3] = 'high school' 
+urban[4] = 'college/university campus' 
+urban[5] = 'hotel' 
+urban[6] = 'goodwill' 
+urban[7] = 'foodbank' 
+urban[8] = 'bar/pub' 
+urban[9] = 'mall/strip mall' 
+urban[10] = 'factory' 
+urban[11] = 'car dealership' 
+urban[12] = 'library/book store' 
+urban[13] = 'hardware store' 
+urban[14] = 'office tower' 
+urban[15] = 'gas station/truck stop' 
+urban[16] = 'gym' 
+urban[17] = 'pharmacy' 
+urban[18] = 'airport' 
+urban[19] = 'train/subway station' 
+urban[20] = 'military surplus store' 
+urban[21] = 'storage units' 
+urban[22] = 'warehouse' 
+urban[23] = 'grocery store' 
+urban[24] = 'walmart' 
+urban[25] = 'apartment building (8-plex)' 
+urban[26] = 'middle-class suburb' 
+urban[27] = 'low-income rowhouses' 
+urban[28] = 'convenience store' 
+urban[29] = 'veterinary clinic' 
+single(urban)
+
+document.write("<br /><br /><b>Misc. Locations:</b> ") 
+var rural = new Array 
+rural[0] = 'farmland/barn' 
+rural[1] = 'campgrounds' 
+rural[2] = 'mine/quarry' 
+rural[3] = 'downed cargo plane' 
+rural[4] = 'beached cargo ship' 
+rural[5] = 'anadoned cargo train' 
+rural[6] = 'broken down semi truck' 
+rural[7] = 'highway car pile-up/crash' 
+rural[8] = 'survivalist cabin' 
+rural[9] = 'abandoned survivor camp/compound' 
+rural[10] = 'active survivor camp/compound' 
+rural[11] = 'prison' 
+rural[12] = 'mine/quarry' 
+rural[13] = 'downed cargo plane' 
+rural[14] = 'beached cargo ship' 
+rural[15] = 'anadoned cargo train' 
+rural[16] = 'broken down semi truck' 
+rural[17] = 'highway car pile-up/crash' 
+rural[18] = 'survivalist cabin' 
+rural[19] = 'abandoned survivor camp/compound' 
+single(rural)
+
+
+</script></p>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</div>
+</body>
+</html>
