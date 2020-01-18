@@ -45,7 +45,7 @@ body {
 
 /* Title Styling  */
 .title {
-  text-align: center;
+  text-align: right;
   border-bottom: 1px solid black;
   margin-left: -20px;
   margin-right: -20px;
