@@ -47,7 +47,8 @@ body {
 .title {
   text-align: right;
   border-bottom: 1px solid black;
-  margin-left: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
   font-size: 36px;
 
 }
