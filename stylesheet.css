@@ -67,28 +67,12 @@ body {
 }
 
 /* npc blocks  */
-.npcblock {
-	width: 910px;
-	margin: auto;
+.npccontainer {
+  display: flex;
 }
-
-.npcl {
-  float: left;
+.npccontainer > div {
   width: 300px;
-  border: 1px solid black;
-}
-
-.npcm {
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  border: 1px solid black;
-}
-
-.npcr {
-  float: right;
-  width: 300px;
-  border: 1px solid black;
+  flex: 1; /*grow*/
 }
 
 
