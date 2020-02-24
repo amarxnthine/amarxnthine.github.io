@@ -74,21 +74,21 @@ body {
 
 .npcl {
   float: left;
-  width: 300px;
+  width: 33%;
   border: 1px solid black;
 }
 
 .npcm {
   float: left;
   margin-left: 302px;
-  width: 300px;
+  width: 33%;
   border: 1px solid black;
 }
 
 .npcr {
   float: left;
   margin-left: 606px;
-  width: 300px;
+  width: 33%;
   border: 1px solid black;
 }
 
