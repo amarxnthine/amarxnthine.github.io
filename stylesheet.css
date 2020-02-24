@@ -71,7 +71,7 @@ body {
   display: flex;
 }
 .npccontainer > div {
-  width: 300px;
+  width: 250px;
   border: 1px solid black;
   flex: 1; /*grow*/
 }
