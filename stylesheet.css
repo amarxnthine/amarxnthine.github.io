@@ -68,7 +68,8 @@ body {
 
 /* npc blocks  */
 .npcblock {
-	width: 900px;
+	width: 902px;
+	margin: auto;
 }
 
 .npcl {
