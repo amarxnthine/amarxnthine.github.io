@@ -68,12 +68,11 @@ body {
 
 /* npc blocks  */
 .npccontainer {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
 }
 .npccontainer > div {
   width: 300px;
+  border: 1px solid black;
   flex: 1; /*grow*/
 }
 
