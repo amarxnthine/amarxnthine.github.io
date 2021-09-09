@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Archipelagos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import "https://amarxnthine.github.io/stylesheet.css";
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="https://amarxnthine.github.io/index.html">Index</a>
+  <a href="https://amarxnthine.github.io/generators.html">Generators</a>
+  <a href="https://amarxnthine.github.io/zombies.html">Zombies</a>
+</div>
+
+<div class="content">
+  <div class="title">The Archipelagos</div>
+  <div style="text-align:right"><a href="/minigames.html">Minigames</a></div>
+  <br>
+<p>A low-fantasy Harvest Moon/Stardew/Rune Factory-esque world that lives in the back of my head.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</div>
+</body>
+</html>
